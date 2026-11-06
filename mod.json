@@ -1,0 +1,27 @@
+{
+  "geode": "4.0.0",
+  "gd": { "win": "2.2074", "android": "2.2074", "mac": "2.2074", "ios": "2.2074" },
+  "version": "v1.0.0",
+  "id": "user.auto-deco",
+  "name": "Auto Deco",
+  "developer": "user",
+  "description": "Dekoriert ausgewählte Blöcke automatisch (Kanten, Säulen, Ecken, Streuung). Einstellungen in den Mod-Settings.",
+  "settings": {
+    "edge-glow":   { "name": "Kanten-Deko (oben)", "type": "bool", "default": true },
+    "edge-bottom": { "name": "Kanten-Deko auch unten", "type": "bool", "default": false },
+    "pillars":     { "name": "Säulen unter Blöcken", "type": "bool", "default": true },
+    "corners":     { "name": "Ecken-Punkte", "type": "bool", "default": true },
+    "scatter":     { "name": "Zufalls-Streuung", "type": "bool", "default": true },
+    "hazards":     { "name": "Auch Spikes/Hazards streuen", "type": "bool", "default": false },
+    "density":     { "name": "Dichte", "type": "int", "default": 4, "min": 1, "max": 10 },
+    "size":        { "name": "Deko-Größe", "type": "float", "default": 0.3, "min": 0.1, "max": 1.5 },
+    "offset":      { "name": "Abstand zum Block", "type": "float", "default": 2.0, "min": -10, "max": 30 },
+    "scatter-radius": { "name": "Streu-Radius", "type": "float", "default": 30.0, "min": 5, "max": 120 },
+    "deco-ids":    { "name": "Deko-Objekt-IDs (Komma)", "type": "string", "default": "1,40" },
+    "color-id":    { "name": "Farb-ID (0 = unverändert)", "type": "int", "default": 0, "min": 0, "max": 999 },
+    "z-layer":     { "name": "Z-Layer", "type": "string", "default": "B2", "one-of": ["B4","B3","B2","B1","T1","T2","T3"] },
+    "no-touch":    { "name": "No Touch (kein Hitbox)", "type": "bool", "default": true },
+    "seed":        { "name": "Seed (0 = zufällig)", "type": "int", "default": 0, "min": 0, "max": 999999 },
+    "max-objects": { "name": "Max. neue Objekte", "type": "int", "default": 1500, "min": 10, "max": 10000 }
+  }
+}
